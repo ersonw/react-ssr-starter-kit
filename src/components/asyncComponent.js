@@ -38,7 +38,7 @@ const asyncComponent = (getComponent) => class AsyncComponent extends React.Comp
   render () {
     const { Component } = this.state
     if (Component !== null) {
-//       console.log(Component)
+      //       console.log(Component)
       if (Component !== null) {
         return <Component {...this.props} />
       }

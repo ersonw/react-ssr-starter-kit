@@ -5,3 +5,5 @@ dist/**
 dist_ssr/**
 src/index.html
 *.test.js
+build/**
+src/*

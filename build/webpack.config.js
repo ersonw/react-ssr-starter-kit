@@ -161,7 +161,7 @@ const BASE_CSS_LOADER = 'css-loader?sourceMap&-minimize'
 
 webpackConfig.module.rules.push({
   test    : /\.scss$/,
-//   exclude : null,
+  //   exclude : null,
   use : [
     'style-loader',
     BASE_CSS_LOADER,
@@ -171,7 +171,7 @@ webpackConfig.module.rules.push({
 })
 webpackConfig.module.rules.push({
   test    : /\.css$/,
-//   exclude : null,
+  //   exclude : null,
   use : [
     'style-loader',
     BASE_CSS_LOADER,
