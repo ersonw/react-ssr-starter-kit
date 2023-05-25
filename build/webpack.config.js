@@ -18,11 +18,14 @@ const webpackConfig = {
   target  : 'web',
   devtool : config.compiler_devtool,
   resolve : {
+    alias: {
+      '@': paths.client(),
+    },
     modules: [
       paths.client(),
       'node_modules'
     ],
-    extensions : ['.js', '.jsx', '.json']
+    extensions : ['.js', '.jsx', '.json'],
   },
   module : {}
 }

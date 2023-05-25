@@ -3,13 +3,13 @@ import ReactDOM from 'react-dom'
 import ReactDomServer from 'react-dom/server'
 import BrowserRouter from 'react-router/BrowserRouter'
 import { ServerRouter, createServerRenderContext } from 'react-router'
-import { matchRoutesToLocation } from 'lib/react-router-addons-routes'
+import { matchRoutesToLocation } from '@/lib/react-router-addons-routes'
 import ApolloClient, { createNetworkInterface } from 'apollo-client'
 import { getDataFromTree } from 'react-apollo/lib/server'
 import createStore from './store/createStore'
 import CoreLayout from './layouts/CoreLayout'
 
-import { login } from 'routes/Auth/modules/github/githubModule'
+import { login } from '@/routes/Auth/modules/github/githubModule'
 // import { login } from 'routes/Auth/modules/moqui/moquiModule'
 
 class App {
